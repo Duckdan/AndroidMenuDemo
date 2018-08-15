@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="org.chromium.chrome.browser.androridmenudemo.MenuListenerActivity">
+
+    <TextView
+        android:id="@+id/tv_menu_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ff0"
+        android:text="register菜单按钮"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/tv_menu_listener"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#ff0"
+        android:text="listener菜单按钮"
+        android:textSize="30sp" />
+    <TextView
+        android:id="@+id/tv_change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#ff0"
+        android:text="RecyclerView"
+        android:textSize="30sp" />
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:divider="@android:color/black"
+        android:dividerHeight="1dp"
+        android:visibility="gone"></ListView>
+
+    <org.chromium.chrome.browser.androridmenudemo.RecyclerViewImplementsContextMenu
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/holo_red_light"></org.chromium.chrome.browser.androridmenudemo.RecyclerViewImplementsContextMenu>
+
+
+</LinearLayout>
